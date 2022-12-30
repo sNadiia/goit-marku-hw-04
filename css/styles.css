@@ -1,0 +1,341 @@
+
+
+:root {
+--main-text-color:#434455;
+--title-color: #2E2F42;
+--web-color: #4D5AE5;
+--white-color: #FFFFFF;
+--footer-text-color: #E7E9FC;
+--cloud-background: #F4F4FD;
+--main-font-family: 'Roboto', sans-serif;
+--logo-font-family: 'Raleway', sans-serif;
+}
+.links, .header-list, .features-list, .images-list, .employees-list, .list-buttons, .list-portfolio {
+    list-style: none;
+}
+ 
+a {text-decoration: none;}
+
+body { color: var(--main-text-color);
+    background-color: var(--white-color);
+    font-family: var(--main-font-family);
+    letter-spacing: 0.02em;
+    font-size: 16px;
+}
+h1,h2,h3,h4,h5,h6,h7,p {
+    margin: 0;
+}
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/*  Constant */
+    
+.container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    /* outline: 1px solid sienna; */
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    
+} 
+ 
+/* ======= Header Шапка сторінки ======= */
+
+.logo {
+font-family: 'Raleway';
+font-weight: 800;
+font-size: 18px;
+line-height: 1.33;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--web-color);
+
+margin-right: 76px;
+}
+
+
+.logo-studio {
+    color:var(--title-color);
+}
+
+.link-studio, .link-portfolio, .link-contacts {
+font-weight: 600;
+line-height: 1.5;
+color: var(--title-color);
+}
+.item-link:not(:last-child), .item-list:not(:last-child) {
+margin-right: 40px;
+}
+
+.links:hover, .links:focus {
+    color:var(--main-text-color);
+}
+.link-studio:active, .link-portfolio:active, .link-contacts:active {
+    color: var(--web-color);
+}
+
+.tel, .mail {
+color: inherit;
+line-height: 1.5;
+}
+.tel:hover, .tel:focus, .mail:hover, .mail:focus {
+    color: var(--web-color); 
+}
+
+.container-header, .header-nav, .links, .header-list {
+        display: flex;
+        align-items: center;
+    }
+
+.header-list {
+    margin-left: auto;
+}
+.header {
+    border-bottom: 1px solid #E7E9FC;
+    padding-top: 24px ;
+    padding-bottom: 24px ;
+}
+
+/* === section 1 Заголовна частина ====== */
+
+.heading, .footer {
+    background-color: var(--title-color);
+}
+.heading {
+padding-top: 188px;
+padding-bottom: 188px;
+}
+.heading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+align-items: center;
+ 
+}
+.heading-title {
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 1.07;
+    color: var(--white-color);
+
+   margin-bottom: 48px;
+   
+}
+.button {
+background-color: var(--web-color);
+font-family: var(--main-font-family);
+font-weight: 600;
+font-size: 16px;
+line-height: 1.19;
+letter-spacing: 0.04em;
+color: var(--white-color);
+cursor: pointer;
+
+padding: 16px 32px;
+} 
+
+ .button:active {
+    background-color: #404BBF;
+}
+
+
+/* ======= section 2 Особливості роботи ======*/
+
+ .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.item-feature {
+    min-width: 264px;
+}
+    
+.feature-caption {
+color: var(--title-color);
+font-weight: 600;
+font-size: 20px;
+line-height: 1.2;
+
+margin-bottom: 8px;
+}
+.feature-text {
+line-height: 1.5;
+}
+
+.features-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;    
+}
+
+
+
+/* ======== section 3 Фото контент ======= */
+
+.images {
+    padding-bottom: 120px;
+}
+.images-title, .employees-title {
+font-weight: 600;
+font-size: 36px;
+line-height: 1.11;
+text-align: center;
+color: var(--title-color)
+}
+.images-title{
+    margin-bottom: 72px;
+    text-transform: capitalize;
+}
+.images-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+/* ========  section 4 Співробітники =======*/
+.employees {
+background: var(--cloud-background);
+}
+.employees-title {
+margin-bottom: 72px;
+}
+.employees-icon {
+background-color: var(--white-color);
+}
+.employees-subtitle {
+font-weight: 600;
+font-size: 20px;
+line-height: 1.2;
+text-align: center;
+color: var(--title-color);
+
+margin-bottom: 8px;
+}
+.employees-text {
+line-height: 1.5;
+text-align: center;
+}
+.employees-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px; 
+
+}
+.employees-sign {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+}
+/* ========= footer підвал ============== */
+
+
+.footer-text {
+line-height: 1.5;
+color: var(--footer-text-color);
+
+margin-top: 16px;
+}
+.logo-footer {
+font-family: 'Raleway';
+font-weight: 800;
+font-size: 18px;
+line-height: 1.17;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--web-color);
+}
+
+.logo-studio-footer {color: var(--cloud-background)
+}
+
+.footer {
+padding-top: 100px;
+padding-bottom: 100px;
+}
+.footer-tumbh {
+   display: inline-block;
+   max-width: 264px;
+}
+
+/* =========== Portfolio =============*/
+
+.portfolio-button {
+font-family: var(--main-font-family);
+font-weight: 600;
+font-size: 16px;
+line-height: 1.5;
+text-align: center;
+letter-spacing: 0.04em;
+color: var(--web-color);
+background: var(--cloud-background);
+cursor: pointer;
+
+padding: 12px 24px;
+border: transparent;
+}
+.item-button:not(:last-child) {
+  margin-right: 24px;
+}
+ 
+.portfolio-button:active, .portfolio-button:hover, .portfolio-button:focus {
+    background: var(--web-color);
+    color: var(--white-color);
+}
+.subtitle-portfolio {
+font-weight: 600;
+font-size: 20px;
+line-height: 1.2;
+color: var(--title-color);
+
+margin-bottom: 8px;
+}
+.text-portfolio {
+line-height: 1.5;
+}
+.list-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 72px;
+}
+
+.portfolio {
+padding-top: 96px;
+}
+
+.list-portfolio { 
+  display: flex;
+  flex-wrap: wrap;  
+  column-gap: 24px;
+  row-gap: 48px;
+  padding-bottom: 120px;
+  width: calc(100%-48px)/3;
+}
+
+.sign-portfolio {
+padding-top: 32px;
+padding-bottom: 32px;
+padding-left: 16px;
+padding-right: 16px;
+border: 1px solid #E7E9FC; 
+border-top: none;
+}
+ 
