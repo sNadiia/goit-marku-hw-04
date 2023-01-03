@@ -429,7 +429,7 @@ background-color: rgba(255, 255, 255, 0.1);
 fill: var(--cloud-background);
 }
   
-.footer-link-svg:hover, footer-link-svg:focus{
+.footer-link-svg:hover, .footer-link-svg:focus{
    background-color: #31D0AA }
 
  .footer-icon {
